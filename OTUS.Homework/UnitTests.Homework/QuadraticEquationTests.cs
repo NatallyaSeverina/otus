@@ -74,12 +74,12 @@ namespace UnitTests.Homework
 		}
 
 		[Test]
-		public void Solve_DoubleNaNAsAParameter_ThrowException()
+		public void Solve_DoubleNaNAsParameters_ThrowException()
 		{
 			// Arrange  a = 0
 			var a = Double.NaN;
-			var b = 2;
-			var c = 1;
+			var b = Double.NegativeInfinity;
+			var c = Double.PositiveInfinity;
 					
 			// Act
 			// Assert
