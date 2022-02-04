@@ -6,11 +6,6 @@ namespace UnitTests.Homework
 {
 	public class QuadraticEquationTests
 	{
-		[SetUp]
-		public void Setup()
-		{
-		}
-
 		[Test]
 		public void Solve_NegativeDiscriminant_ReturnsEmptyArrayWithoutRoots()
 		{
