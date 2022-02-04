@@ -1,4 +1,4 @@
-name: dotnet package
+﻿name: dotnet package
 
 on:
   push:
@@ -24,10 +24,7 @@ jobs:
           dotnet-version: ${{ matrix.dotnet-version }}
       - name: Install dependencies
         run: dotnet restore
-        working-directory: ./OTUS.Homework
       - name: Build
         run: dotnet build --configuration Release --no-restore
-        working-directory: ./OTUS.Homework
       - name: Test
         run: dotnet test --no-restore --verbosity normal
-        working-directory: ./OTUS.Homework
